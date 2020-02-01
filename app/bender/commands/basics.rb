@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../assets/roasts.rb'
+require_relative '../assets/roasts'
 
 module Bender
   module Commands
