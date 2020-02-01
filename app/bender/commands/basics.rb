@@ -1,9 +1,17 @@
+# frozen_string_literal: true
+
+require_relative '../assets/roasts.rb'
+
 module Bender
-  class Basics
-    class << self
-      def subscribe(bot)
-        
+  module Commands
+    class Basics
+      class << self
+        def subscribe(bot)
+          bot.command :roast do |_event|
+            Bender::Assets::Roasts.data.sample
+          end
+        end
       end
     end
-  end  
+  end
 end
