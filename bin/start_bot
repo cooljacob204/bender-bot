@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/bender'
+require_relative '../app/bender'
 
 Bender::Bot.new.start

@@ -6,7 +6,7 @@ require 'dotenv/load'
 module Bender
   class Bot
     def initialize
-      @bot = Discordrb::Commands::CommandBot.new token: ENV['DISCORD_TOKEN'], prefix: '$'
+      @bot = Discordrb::Commands::CommandBot.new token: ENV['DISCORD_TOKEN'], prefix: 'pimp '
     
       @bot.subscribe
     end
